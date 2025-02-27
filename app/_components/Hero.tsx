@@ -1,4 +1,5 @@
 import React from 'react'
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
 const Hero = () => {
     return (
@@ -22,7 +23,7 @@ const Hero = () => {
                             className="block w-full rounded-sm border border-blue-600 bg-white px-12 py-3 text-sm font-medium text-gray-900 hover:bg-transparent hover:text-white focus:ring-3 focus:outline-hidden sm:w-auto"
                             href="#"
                         >
-                            Get Started
+                            <LoginLink>Get Started</LoginLink>
                         </a>
 
                         <a

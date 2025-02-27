@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 
 const Header = () => {
     return (
@@ -76,7 +77,7 @@ const Header = () => {
                                 className="rounded-md bg-white px-5 py-2.5 text-sm font-medium text-bg-gray-800 shadow-sm dark:hover:bg-teal-500"
                                 href="#"
                             >
-                                Login
+                                <LoginLink>Login</LoginLink>
                             </a>
 
                             <div className="hidden sm:flex">
@@ -84,7 +85,7 @@ const Header = () => {
                                     className="rounded-md light:bg-gray-100 px-5 py-2.5 text-sm font-medium light:text-teal-600 bg-gray-800 text-white dark:hover:text-white/75"
                                     href="#"
                                 >
-                                    Register
+                                    <RegisterLink>Register</RegisterLink>
                                 </a>
                             </div>
                         </div>
